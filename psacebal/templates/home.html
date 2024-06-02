@@ -26,10 +26,11 @@
   <!-- responsive style -->
   <link href= "{% static 'css/responsive.css' %}" rel="stylesheet" />
   <link rel="stylesheet" href="{% static 'css/style.scss' %}"/>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -75,11 +76,6 @@
               </a>
             </div>
           </div> {% endcomment %}
-          <div class="col-md-6">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="">
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -199,6 +195,9 @@
   <!-- service section -->
 
   <section class="service_section layout_padding">
+    <a id="btn" href="https://wa.me/5493417120259?text=Hola" class="float-wa" target="_blank">
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <div class="container ">
       <div class="heading_container heading_center">
         <h2> Mis Servicios</h2>
@@ -214,7 +213,7 @@
                 Mantenimiento
               </h5>
               <p>
-                Lubricación, cambio de cintas, evaluar en que estado esta tu persiana
+                Lubricación, cambio de cintas, reparación de guias
               </p>
             </div>
           </div>
@@ -263,20 +262,6 @@
           <div class="info_items">
             <div class="row">
               <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box ">
-                      <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      Cerrito 876 <br>
-                       Dpto 3
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
                   <div class="item ">
                     <div class="img-box ">
                       <i class="fa fa-phone" aria-hidden="true"></i>
@@ -285,20 +270,6 @@
                       341 712-0259
                     </p>
                   </div>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="">
-                  <div class="item ">
-                    <div class="img-box">
-                      <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <p>
-                      richardrc_90@hotmail.com
-                    </p>
-                  </div>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -331,15 +302,14 @@
   </footer>
   <!-- footer section -->
 
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  <script src="{% static 'js/jquery-3.4.1.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap.js'%} "></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
-  <script src="js/custom.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
-
 
 </body>
 
